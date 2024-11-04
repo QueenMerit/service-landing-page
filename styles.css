@@ -1,0 +1,288 @@
+:root{
+  --black: #252422;
+  --blue: #03A9F5;
+  --pink: #FD2780;
+  --darkpink: #7F1440;
+  --yellow: #FDEC3D;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(96deg, var(--pink), var(--darkpink) 60%);
+  color: var(--white);
+  background-repeat: no-repeat;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+  width: 100%;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;    
+  background: linear-gradient(96deg,  var(--darkpink), var(--pink) 70%);
+}
+
+#logo {
+  width: max(45px, 10vw);
+  aspect-ratio: 5 / 2.5;
+}
+
+.img-showcase {
+  width: 100%
+}
+
+.img-box {
+  width: 50%;
+  margin: auto;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0; 
+}
+
+ ul li {
+  display: block;
+  margin: 0 0.4rem;
+  padding: 0.2rem;
+  overflow: hidden;
+  color: var(--white);
+  list-style: none;
+}
+
+ li a {
+  color: var(--color4);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size:12px;
+  font-weight: bold;
+}
+
+nav > ul > li:hover {
+  background-color: var(--black);
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+main {
+  padding-top: 100px;
+}
+
+
+section {   
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+}
+
+.title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 800;
+}
+
+.sub-title, figcaption {
+  font-size: 13.5px;
+  text-align: center;
+  margin: 5px 0 16px 0;    
+}
+
+figcaption {
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  Padding: 4px;
+}
+
+.bold {
+  font-weight: bold;
+  display: block;
+  padding-bottom: 3px;
+}
+
+::placeholder {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--color3);
+  font-size: 10px;
+}
+
+#contact {
+  width: 50%;
+  margin: 8px auto;
+  background-color: var(--yellow);
+  color: var(--black);
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+address {
+  margin: 0 auto;
+  font-size: 10px;
+  line-height: 1;
+  width: 60%;
+  text-align: center;
+}
+
+video {
+  margin: 20px auto 0 auto;
+  display: block;    
+}
+
+#services {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.cta{
+  border-bottom:2px solid var(--yellow);
+}
+
+.description {
+  background-color: var(--yellow);
+  color: var(--black);
+  padding: 4px;
+}
+
+h2 {
+  font-size: 22px;
+  padding-top: 5px;
+}
+
+h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-top: 1rem;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 2px;
+  font-weight: 600;
+}
+
+h5 {
+  margin-top: 0;
+  border-radius: 5px;
+  font-size: 9px;
+  background-color: var(--blue);
+  padding: 5px;
+}
+
+.gift-box {
+  display: flex;
+  justify-content: center;
+}
+
+.p-size p {
+  font-size: 14px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+    
+}
+
+.package {
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  width: 32%;
+  text-align: center;
+}
+
+.container p {
+  font-size: 10px;
+}
+
+#cost {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+footer {
+  background-color: var(--black);
+  font-size: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+@media (max-width: 1480px) {
+  li a {
+    font-size:16px;
+  }
+
+  nav > ul {
+    padding: 0 18px 0 0; 
+  }
+  
+   ul li {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+  
+  .sub-title, figcaption {
+    font-size: 1.5rem;  
+  }
+
+  #cost {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  h5 {
+    font-size: 1.1px;
+  }
+
+  .p-size p {
+    font-size: 1rem;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  .reach {
+    margin-top: 70px; 
+  }
+
+  #contact {
+    font-size: 1rem;
+  }
+
+  .reach p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
